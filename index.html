@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resultado da busca</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="container search-result mx-auto p-3">
+        <div class="row box-msg mb-5">
+            <div class="result-thumb col col-12 col-md-4 p-4 d-flex align-items-center justify-content-center">
+                <img class="d-block" src="assets/img/magnify.png" alt="Magnify">
+            </div>
+            <div class="result-msg col col-12 col-md-8 d-flex align-items-center justify-content-center">
+                <div class="p-3 p-md-5">
+                    <h3 class="msg-res-tit">
+                        Nenhum produto encontrado para sua pesquisa por:
+                    </h3>
+                    <p class="keywords">
+                        libero lectus, scelerisque quis venenatis sed
+                    </p>
+                    <p class="insight">Tente algo como</p>
+                    <p class="insight-item">Usar termos mais genéricos</p>
+                    <p class="insight-item">Verificar a ortografia</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col">
+                <h2 class="correlated">Quem comprou estre produto, comprou também</h2>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col correlated-items">
+                <div class="owl-slider">
+                    <div class="owl-carousel owl-theme" id="carousel">
+                        <div class="item" style="height: auto; width: 128px">
+                            <a href="#" title="Book">
+                                <img src="assets/img/tmb-book-01.png" alt="Book">
+                            </a>
+                        </div>
+                        <div class="item" style="height: auto; width: 128px">
+                            <a href="#" title="Book">
+                                <img src="assets/img/tmb-book-01.png" alt="Book">
+                            </a>
+                        </div>
+                        <div class="item" style="height: auto; width: 128px">
+                            <a href="#" title="Book">
+                                <img src="assets/img/tmb-book-01.png" alt="Book">
+                            </a>
+                        </div>
+                        <div class="item" style="height: auto; width: 128px">
+                            <a href="#" title="Book">
+                                <img src="assets/img/tmb-book-01.png" alt="Book">
+                            </a>
+                        </div>
+                        <div class="item" style="height: auto; width: 128px">
+                            <a href="#" title="Book">
+                                <img src="assets/img/tmb-book-01.png" alt="Book">
+                            </a>
+                        </div>
+                        <div class="item" style="height: auto; width: 128px">
+                            <a href="#" title="Book">
+                                <img src="assets/img/tmb-book-01.png" alt="Book">
+                            </a>
+                        </div>
+                        <div class="item" style="height: auto; width: 128px">
+                            <a href="#" title="Book">
+                                <img src="assets/img/tmb-book-01.png" alt="Book">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col brand justify-content-center p-3">
+                <img class="d-none d-lg-block mx-auto img-fluid" src="assets/img/slogan.png" alt="Cultura é o que nos une">
+                <img class="d-block d-lg-none mx-auto img-fluid" src="assets/img/slogan-sm.png" alt="Cultura é o que nos une">
+                <img class="d-block mx-auto img-fluid" src="assets/img/brand.jpg" alt="Livraria Cultura, Fnac, Estante Virtual">
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script>
+        jQuery("#carousel").owlCarousel({
+            autoplay: false,
+            lazyLoad: true,
+            loop: false,
+            responsiveClass: true,
+            autoHeight: false,
+            autoplayTimeout: 7000,
+            smartSpeed: 800,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 4
+                },
+                1024: {
+                    items: 5
+                },
+                1366: {
+                    items: 5
+                }
+            }
+        });
+    </script>
+</body>
+</html>
